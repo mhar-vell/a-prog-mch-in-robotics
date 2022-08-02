@@ -1,15 +1,25 @@
 \section(Referencial)
 
-\subsection(Método BiLi)
+\subsection(BiLi Method)
 //valar @pedro
 //todo @pedro > implementar a subsection
+The BiLi method is a bibliometric tool used to optimize and refine the search of references and sources for reserach. Such tool was utiized in this article, following its four cycle methodology, in order to select the main articles written by the most relevant authors.
 
+\\subsubsection{Naive Cycle}
+The first part of the BiLi method centers around finding the most appropriate key-words to be used in the chosen citations database. This study used Scopus as its chosen database.
+The result of this search was exported in a .bib format and analyzed in bibliometrix. Aspects such as co-citation network, annual scientific production,  histograph, and wordcloud was evaluated and analyzed when deciding wheter such key-words resulted in the best references possible.
+If decided that the sources did not meet with the criteria of qualification, another string was formulated and ran in Scopus.
+On the other hand, if the results showed that the database was relevant to the "Failure Prognosis" research, such .bib file was analyzed using litsearchr.
+Such R package refines and calculates the most adequate key-words for the reserach based on the .bib file chosen. This new string was again applied in Scopus.
+
+//subsubsection{Optimized Cycle}
+Using the resulted string from litsearchr in Scopus, a new .bib file was exported
 
 \subsection{O conceito falhas}
 //valar @alexandre
 //todo implementar a subsection
 
 
-\subsection{Redes Bayesianas}
+\subsection{Bayesian Networks}
 //valar @pedro
 //todo implementar a subsection
