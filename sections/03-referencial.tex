@@ -1,27 +1,27 @@
-\section(Referencial)
+\section{Referencial}
 
-\subsection(BiLi Method)
-//valar @pedro
-//todo @pedro > implementar a subsection
+\subsection{BiLi Method}
+%//valar @pedro
+%//todo @pedro > implementar a subsection
 The BiLi method is a bibliometric tool used to optimize and refine the search of references and sources for reserach. Such tool was utiized in this article, following its four cycle methodology, in order to select the main articles written by the most relevant authors.
 
-\\subsubsection{Naive Cycle}
+\subsubsection{Naive Cycle}
 The first part of the BiLi method centers around finding the most appropriate key-words to be used in the chosen citations database. This study used Scopus as its chosen database.
 The result of this search was exported in a .bib format and analyzed in bibliometrix. Aspects such as co-citation network, annual scientific production,  histograph, and wordcloud was evaluated and analyzed when deciding wheter such key-words resulted in the best references possible.
 If decided that the sources did not meet with the criteria of qualification, another string was formulated and ran in Scopus.
 On the other hand, if the results showed that the database was relevant to the "Failure Prognosis" research, such .bib file was analyzed using litsearchr.
 Such R package refines and calculates the most adequate key-words for the reserach based on the .bib file chosen. This new string was again applied in Scopus.
 
-//subsubsection{Optimized Cycle}
+\subsubsection{Optimized Cycle}
 Using the resulted string, from litsearchr, in Scopus, a new .bib file was exported and analyzed in bibliometrix. Taking into consideration the same aspects and criteria as the analysis done during the naive cycle, if the references showed relevancy to the reserach, they were filtered through revtools, another R package.
 Revtools orders all the titles and abstracts of the .bib file, giving the user the options of selection or excluion of the source. Such tool was used in this paper to select all the titles that met with the purpose of the research, and excluding all those that did not.
 After selecting the references that were most aligned with the topic of reserach, the result was a .csv file. Such file was changed to a .bib file called "optimized".
 
-//subsubsection{Impact Cycle}
+\subsubsection{Impact Cycle}
 The optimized file, containing all the sources from the Scopus database that showed the most correlation with the topic "Failure Prognosis", was analyzed in bibliometrix. 
 The "author impact by total citation" score was evaluated, and the five authors of highest H-index were noted. The articles written by these scholars were selected and added to Mendeley.
 
-//subsubsection{Production Cycle}
+\subsubsection{Production Cycle}
 The articles produced by the authors of highest impact were read, analyzed, and annotated in Mendeley.
 Such references led to the study of the state of the art of the research.
 
@@ -31,5 +31,7 @@ Such references led to the study of the state of the art of the research.
 
 
 \subsection{Bayesian Networks}
-//valar @pedro
-//todo implementar a subsection
+% //valar @pedro
+% //todo implementar a subsection
+Bayesian networks (BN) are a probabilistic graphical model that  permits  a  probabilistic  relationship  among a set of variables.  Each  node  represents  a  variable  and  the  arcs  indicate  direct probabilistic  relations  between  the  connected  nodes [Mapping Fault Tree into Bayesian Network in safety analysis of process]. The main role of the network structure is to express the conditional independence relationships among the variables in the model [Understanding Bayesian Networks - with Examples in R (Presentation Oxford)].
+
