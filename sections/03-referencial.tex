@@ -13,7 +13,17 @@ On the other hand, if the results showed that the database was relevant to the "
 Such R package refines and calculates the most adequate key-words for the reserach based on the .bib file chosen. This new string was again applied in Scopus.
 
 //subsubsection{Optimized Cycle}
-Using the resulted string from litsearchr in Scopus, a new .bib file was exported
+Using the resulted string, from litsearchr, in Scopus, a new .bib file was exported and analyzed in bibliometrix. Taking into consideration the same aspects and criteria as the analysis done during the naive cycle, if the references showed relevancy to the reserach, they were filtered through revtools, another R package.
+Revtools orders all the titles and abstracts of the .bib file, giving the user the options of selection or excluion of the source. Such tool was used in this paper to select all the titles that met with the purpose of the research, and excluding all those that did not.
+After selecting the references that were most aligned with the topic of reserach, the result was a .csv file. Such file was changed to a .bib file called "optimized".
+
+//subsubsection{Impact Cycle}
+The optimized file, containing all the sources from the Scopus database that showed the most correlation with the topic "Failure Prognosis", was analyzed in bibliometrix. 
+The "author impact by total citation" score was evaluated, and the five authors of highest H-index were noted. The articles written by these scholars were selected and added to Mendeley.
+
+//subsubsection{Production Cycle}
+The articles produced by the authors of highest impact were read, analyzed, and annotated in Mendeley.
+Such references led to the study of the state of the art of the research.
 
 \subsection{O conceito falhas}
 //valar @alexandre
