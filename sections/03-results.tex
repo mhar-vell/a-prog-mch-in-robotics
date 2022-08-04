@@ -10,12 +10,39 @@ Consulte o manual da classe \textsf{abntex2} \cite{abntex2classe} para uma refer
 
 %----------------------------------------------------------------
 \subsection{Estudo do estado da arte}
-There have been published several works in which BNs are used for the diagnostics of machine failure. Among such dense selection of works, few deal with prognostics using BNs as a probabilistic tool. However, in order to optimize our findings, the method BiLi was applied to refine our references and sources.
+There have been published several works in which BNs are used for the diagnostics of machine failure. Among such dense selection of papers, few deal with machine failure prognostics using BNs as a probabilistic tool. However, in order to optimize our findings, the method BiLi was applied to refine our references and sources.
 
-Firstly, during the naive cycle, different key-words were tested. A total of 32 trials were run in Scopus, in which the first trial was composed of key-words:
- 
-String utilized after Naive Cycle:
-( TITLE-ABS-KEY ( prognosis  OR  prediction )  AND  TITLE-ABS-KEY ( "fault tree"  OR  "failure mode and effects analysis"  OR  "condition based maintenance" )  AND  TITLE-ABS-KEY ( "robotics system"  OR  robot  OR  robotics  OR  equipment  OR  "smart machine"  OR  "autonomous systems" ) )
+Firstly, during the naive cycle, different key-words were tested. A total of 32 trials were run in Scopus, in which the first trial was composed of the following key-words:
+
+
+
+and the last string was the following:
+
+\begin{center}
+    \begin{tabular}{ c c c c c c c c c c }
+        "" & failure & OR & fault & OR & fail & OR & breakdown & OR & degradation \\
+        AND & prediction & OR & prognosis & OR & diagnosis \\
+        AND & reliability & OR & maintenance systems & OR & condition based maintenaince \\
+        AND & robotics & OR & robots \\
+        AND NOT & bankrupcy & OR & bank & OR & patient & OR & forests
+
+    \end{tabular}
+\end{center}
+
+ After the 32nd trial satisfied a annual growth rate of 18.56\% between 2015 and 2021, and demonstrated a co-citation network of four clusters, in which the two main ones demonstrated good connection, whereas the the two much smaller ones were isolated from each other, the key-words were refined through "litsearchr".The resulted key-words were the following:
+
+ \begin{center}
+    \begin{tabular}{ c c c c c c c c c c c c }
+        "" & prognosis & OR & prediction \\
+        AND & fault tree & OR & failure mode and effects analysis & OR & condition based maintenance \\
+        AND & robotics system & OR & robot & OR & robotics & OR &equipment & OR & smart machine & OR & autonomous systems
+    \end{tabular}
+\end{center}
+
+Beggining the optimized cylce, after computing the above key-words on scopus, a new .bib file was exported and analyzed in bibliometrix. Its annual scientific production was 11.61\%, and the co-citation network demonstrated four clusters, with two of them connected and the two others isolated by themselves. Therefore, it showed relevancy for the research.
+
+Furthermore, such file was ran through revtools, in which only the most relevant and alligned pieces of literature with the research "Failure Prognosis" were selected.
+
 
 Authors with most Local Impact (highest H-index score):
 \begin{itemize}
